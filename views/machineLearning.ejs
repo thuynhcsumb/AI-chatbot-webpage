@@ -1,0 +1,69 @@
+<%- include('partials/header.ejs') %>
+  
+  <nav>
+    <ul class="navigation">
+      <li><a href="/">AI ASSISTANCE</a></li>
+      <li><a href="/intro">INTRODUCTION</a></li>
+      <li><a href="/ML"  class="current">MACHINE LEARNING</a></li>
+      <li><a href="/DL">DEEP LEARNING</a></li>
+      <li><a href="/NLP">NLP</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Machine Learning (ML)</h1>
+  </header>
+  <br>
+  <main>
+    <time datetime="2024-06-25">Last updated: June 25, 2024</time>
+    <br><br>
+    <p><strong>Machine learning (ML) is a branch of artificial intelligence (AI) focused on enabling machines to learn from data and previous experiences autonomously, enabling them to recognize patterns and make predictions with little human involvement. This article delves into the basics of machine learning, its various categories, and outlines five prominent applications.</strong></p>
+    <br>
+    <h1>Machine Learning: An Overview</h1>
+    <br>
+    <p>Machine learning (ML) is a field within artificial intelligence (AI) that empowers machines to autonomously learn from data and past experiences, allowing them to detect patterns and make predictions with minimal human input. Unlike traditional programming, ML algorithms enable computers to improve their performance as they receive and process new data, continuously refining their understanding and predictive capabilities.</p>
+    <br>
+    <p>ML algorithms extract meaningful insights from vast datasets using computational techniques that learn iteratively. Rather than relying on predefined equations, these algorithms adapt and improve their performance with more data, a process known as 'learning.' Deep learning, a subset of ML, exemplifies this approach by mimicking human learning processes to achieve superior results compared to traditional methods.</p>
+    <br>
+    <figure>
+      <img src="img/2.png" alt="ML" width="750" height="500">
+    </figure>
+    <br>
+    <P>Historically rooted in technologies like the Enigma machine during World War II, ML has evolved significantly with the advent of big data, the Internet of Things (IoT), and pervasive computing. Today, ML finds applications across diverse fields such as computational finance (e.g., credit scoring, algorithmic trading), computer vision (e.g., facial recognition, object detection), computational biology (e.g., DNA sequencing, drug discovery), automotive and aerospace industries (e.g., predictive maintenance), and natural language processing (e.g., voice recognition).</P>
+    <br>
+    <p>In essence, machine learning's ability to harness large datasets and apply complex algorithms automatically represents a transformative force in contemporary technological advancements across various domains.</p>
+    <br>
+    <h1>Types of Machine Learning</h1>
+    <figure>
+      <img src="img/3.png" alt="ML" width="600" height="400">"
+    </figure>
+    <ol class="ML_types">
+      <li><strong>Supervised Machine Learning:</strong> This method involves training machines on labeled datasets, where inputs and outputs are mapped. The machine learns to predict outcomes based on these mappings. For instance, with images of parrots and crows, the machine learns their features (color, shape, etc.) and can later identify new images correctly. Supervised learning techniques are divided into classification (categorical output) and regression (continuous output).<br></li>
+      <li><strong>Unsupervised Machine Learning:</strong> In this method, machines learn from unlabeled data, identifying patterns, similarities, and differences without supervision. For example, given a dataset of fruit images, the machine groups them by color or shape. Unsupervised learning is categorized into clustering (grouping similar items) and association (finding relationships between variables).<br></li>
+      <li><strong>Semi-supervised Learning:</strong> Combining aspects of both supervised and unsupervised learning, this approach uses both labeled and unlabeled data to train algorithms. It aims to overcome the limitations of purely supervised or unsupervised methods, like a student revising concepts learned under a teacher's guidance.<br></li>
+      <li><strong>Reinforcement Learning:</strong> This feedback-based technique involves learning from experiences. The AI component learns through a trial-and-error process, receiving rewards for correct actions and penalties for incorrect ones. Common in game theory and multi-agent systems, the goal is to maximize rewards, much like achieving a high score in a video game. Reinforcement learning includes positive (reward-based) and negative (penalty-avoidance) reinforcement methods.</li>
+    </ol>
+    <br>
+    <h1>Top 5 Machine Learning Applications</h1>
+    <br>
+    <p>Industry verticals that handle vast amounts of data have recognized the importance of machine learning (ML) technology. By extracting real-time insights from data, organizations can operate more efficiently and gain a competitive advantage.</p>
+    <br>
+    <p>In today's digital landscape, various industries benefit significantly from ML technology. Here are the top five sectors applying ML:</p>
+    <br>
+    <ol>
+      <li><strong>Healthcare: </strong>ML is widely adopted through wearable devices like fitness trackers and health watches, monitoring real-time health data. It helps predict patient outcomes, accelerate drug discovery, and enable personalized treatments. For instance, Pfizer uses IBM’s Watson for drug discovery, and Genentech collaborates with GNS Healthcare for targeted therapies.<br></li>
+      <li><strong>Finance: </strong>Financial institutions use ML to prevent fraud and analyze vast data for investment insights. Examples include Citibank partnering with Feedzai for fraud detection and PayPal using ML to differentiate between legitimate and fraudulent transactions.<br></li>
+      <li><strong>Retail: </strong>Retailers leverage ML for personalized shopping experiences, marketing, and price optimization. Amazon and Netflix use ML for product and content recommendations, while virtual assistants and chatbots enhance customer interactions.<br></li>
+      <li><strong>Travel: </strong>ML supports dynamic pricing in ride services like Uber, which uses real-time traffic and demand data for pricing. It also analyzes user reviews for brand and campaign monitoring.<br></li>
+      <li><strong>Social Media: </strong>ML enhances user engagement by personalizing news feeds and ads. Facebook uses image recognition for auto-tagging, and LinkedIn suggests job opportunities and connections.</li>
+    </ol>
+  </main>
+  <br>
+  <section id="references">
+    <em>Articles referenced:</em>
+    <ol class="Articles">
+      <li><a href="https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-ml/">"What Is Machine Learning? Definition, Types, Applications, and Trends," April 4, 2022, Vijay Kanade</a></li>
+    </ol>
+  </section>
+  <br><br>
+
+<%- include('partials/footer.ejs') %>

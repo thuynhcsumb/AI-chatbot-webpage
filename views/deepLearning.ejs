@@ -1,0 +1,77 @@
+<%- include('partials/header.ejs') %>
+  <nav>
+    <ul class="navigation">
+      <li><a href="/">AI ASSISTANCE</a></li>
+      <li><a href="/intro">INTRODUCTION</a></li>
+      <li><a href=/ML>MACHINE LEARNING</a></li>
+      <li><a href="/DL" class="current">DEEP LEARNING</a></li>
+      <li><a href="/NLP">NLP</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Deep Learning (DL)</h1>
+  </header>
+  <br>
+  <main>
+    <time datetime="2024-06-25">Last updated: June 25, 2024</time>
+    <br><br>
+    <p><strong>Deep learning is a branch of machine learning that employs multilayered neural networks, known as deep neural networks, to mimic the intricate decision-making abilities of the human brain. Many of today's artificial intelligence (AI) applications are driven by deep learning. This article delves into the basics of deep learning, its various categories, and use cases.</strong></p>
+    <br>
+    <h1>Deep Learning: An Overview</h1>
+    <br>
+    <p>Neural networks, or artificial neural networks, mimic the human brain using data inputs, weights, and biases, acting as artificial neurons. These components collaborate to recognize, classify, and describe objects within data accurately.</p>
+    <br>
+    <h3>Deep Neural Networks</h3>
+    <p>Deep neural networks have multiple interconnected layers of nodes. Each layer builds on the previous one to refine predictions or categorizations, a process known as forward propagation. The first and last layers, called visible layers, are where the model receives input data and delivers final predictions or classifications, respectively.</p>
+    <br>
+    <figure>
+      <img src="img/4.png" alt="ML" width="600" height="450">
+    </figure>
+    <br>
+    <h3>Backpropagation</h3>
+    <p>Backpropagation is a process that uses algorithms like gradient descent to calculate prediction errors and adjust the weights and biases by moving backward through the layers, training the model. Combined with forward propagation, it enables the neural network to improve accuracy over time.</p>
+    <br>
+    <h3>Computational Requirements</h3>
+    <p>Deep learning demands significant computing power. High-performance graphical processing units (GPUs) are ideal due to their ability to handle numerous calculations across multiple cores and large memory capacity. Distributed cloud computing can also assist. However, managing multiple on-premises GPUs can be resource-intensive and costly to scale.</p>
+    <br>
+    <h3>Software Frameworks</h3>
+    <p>Most deep learning applications are coded using one of three frameworks: JAX, PyTorch, or TensorFlow. These frameworks support the development and training of deep learning models.</p>
+    <br>
+    <h1>Types of Deep Learning models</h1>
+    <br>
+    <p>Deep learning models are complex and come in various types to address specific problems or datasets. Here are six major types, each evolving to overcome the limitations of its predecessors.</p>
+    <br>
+    <ol>
+      <li><strong>Convolutional Neural Networks (CNNs): </strong>CNNs are primarily used in computer vision and image classification. They detect features and patterns within images, enabling tasks such as object and face recognition. CNNs consist of convolutional, pooling, and fully connected layers. They excel with image and audio inputs but require significant computational resources and expertise.<br></li>
+      <li><strong>Recurrent Neural Networks (RNNs): </strong>RNNs are used in natural language and speech recognition, as well as time-series predictions. They utilize sequential data and feedback loops to maintain a "memory" of previous inputs, making them suitable for tasks requiring context understanding. However, RNNs face challenges such as vanishing and exploding gradients, lengthy training times, and complexity in optimization.<br></li>
+      <li><strong>Autoencoders and Variational Autoencoders (VAEs): </strong>VAEs are used for data compression, anomaly detection, and generative modeling. Autoencoders encode data into a compressed form and decode it back, while VAEs additionally generate variations of the original data. They are efficient for handling large datasets without labels but can be computationally intensive.<br></li>
+      <li><strong>Generative Adversarial Networks (GANs): </strong>GANs generate realistic images, video, and audio by pitting a generator against a discriminator. The generator creates fake data, while the discriminator distinguishes it from real data, creating a feedback loop that improves output realism. GANs require extensive data for training and are computationally demanding but produce high-quality outputs useful for training other models.<br></li>
+      <li><strong>Diffusion Models: </strong>Diffusion Models are used for generative tasks, primarily in image synthesis. They add and remove noise to/from data, learning to generate realistic outputs by minimizing discrepancies between generated and real data. These models offer stable training without the adversarial issues of GANs but require significant computational resources and can be vulnerable to manipulation.<br></li>
+      <li><strong>Transformer Models</strong>Transformer Models revolutionized natural language processing, enabling tasks like text generation, translation, and summarization. They use an encoder-decoder architecture for parallel text processing, capturing word relationships and dependencies efficiently. Transformers are highly scalable and adaptable to various tasks but demand extensive computational resources and meticulous training data preparation.</li>
+    </ol>
+    <br>
+    <p>Each type of deep learning model has its strengths and challenges, balancing complexity, accuracy, and computational demands in solving specific AI tasks.</p>
+    <br>
+    <h1>Deep Learning use cases</h1>
+    <br>
+    <p>Deep Learning applications multiply daily, showcasing their transformative impact across various sectors. Here are several ways it currently aids businesses in enhancing efficiency and improving customer service:</p>
+    <br>
+    <ul>
+      <li><strong>Application Modernization: </strong>Generative AI, powered by deep learning and natural language processing (NLP), enhances developer productivity in tasks such as coding and IT automation. Large language models trained on extensive code datasets enable tools to suggest code snippets and automate tasks like legacy application language translation, driving efficiency in software development.<br></li>
+      <li><strong>Computer Vision: </strong>Integrating machine learning and neural networks, computer vision interprets visual data from images and videos. This technology enables systems to detect manufacturing defects, identify objects, and improve safety in automotive applications, demonstrating its wide-ranging impact on industries.<br></li>
+      <li><strong>Customer Care: </strong>AI-driven insights derived from customer data enhance product design and customer service experiences. Generative AI supports personalized recommendations and automates customer interactions, fostering satisfaction and loyalty through tailored services.<br></li>
+      <li><strong>Digital Labor: </strong>Robotic process automation (RPA) and digital labor, enhanced by AI technologies including deep learning, streamline workflows by automating repetitive tasks and assisting knowledge workers in complex processes like software updates and API calls, optimizing operational efficiency.<br></li>
+      <li><strong>Generative AI: </strong>This category autonomously generates text, images, and other content based on user prompts, leveraging deep learning models to innovate marketing strategies and enhance customer service capabilities, driving organizational productivity.<br></li>
+      <li><strong>Natural Language Processing (NLP) and Speech Recognition: </strong>NLP combines linguistic analysis with machine learning to enable computers to understand and generate human language effectively. Speech recognition converts spoken language into text, powering applications ranging from translation services to voice-activated devices, revolutionizing communication interfaces and accessibility.</li>
+    </ul>
+  </main>
+  <br>
+  <section id="references">
+    <em>Articles referenced:</em>
+    <ol class="Articles">
+      <li><a href="https://www.ibm.com/topics/deep-learning">"What is deep learning?," June 17, 2024, Jim Holdsworth, Mark Scapicchio</a></li>
+    </ol>
+  </section>
+  <br><br>
+  
+<%- include('partials/footer.ejs') %>

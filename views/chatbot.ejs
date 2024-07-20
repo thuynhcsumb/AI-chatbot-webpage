@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+  <nav>
+    <ul class="navigation">
+      <li><a href="/" class="current">AI ASSISTANCE</a></li>
+      <li><a href="/intro">INTRODUCTION</a></li>
+      <li><a href=/ML>MACHINE LEARNING</a></li>
+      <li><a href="/DL">DEEP LEARNING</a></li>
+      <li><a href="/NLP">NLP</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>An Intro to AI - Your AI Assistance</h1>
+  </header>
+  <div id="chat-container">
+    <div id="messages">
+      <div class="message bot-message">
+        <img src='<%=botImg%>' alt='bot-img' class="bot-img">
+        Hello, this is <%=botFirstName%>. How may I assist you today?
+      </div>
+    </div>
+    <div id="input-container">
+      <input type="text" id="user-input" placeholder="Type your message here..." />
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const botImg = '<%= botImg %>';
+  </script>
+  <script src="/js/chatbot.js"></script>
+
+  <%- include('partials/footer.ejs') %>
