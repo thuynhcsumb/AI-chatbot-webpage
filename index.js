@@ -74,7 +74,7 @@ app.post("/chat", async (req, res) => {
     res.json({ reply: text });
   } catch (error) {
     console.error("Error generating content:", error);
-    res.status(500).json({ error: "Failed to generate content" });
+    res.status(500).json({ error: "Failed to generate content..."});
   }
 });
 
